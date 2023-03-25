@@ -1,0 +1,9 @@
+.TapeProducts {
+   @apply rounded-2xl px-4 py-6 bg-white;
+   box-shadow: 0px 1px 18px rgba(0, 0, 0, 0.04);
+
+   
+}
+.tape {
+   @apply flex w-full gap-2;
+}

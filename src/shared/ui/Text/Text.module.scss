@@ -1,0 +1,31 @@
+.Text {
+   @apply mb-4
+}
+
+.title {
+   @apply font-normal text-xs text-gray-500;
+}
+
+.left {
+   @apply text-left;
+}
+
+.center {
+   @apply text-center;
+}
+
+.right {
+   @apply text-right;
+}
+
+.semibold {
+   @apply font-semibold text-lg;
+}
+
+.bold {
+   @apply font-bold text-xl;
+}
+
+.normal {
+   @apply font-normal;
+}

@@ -1,0 +1,27 @@
+.Product {
+   @apply text-ellipsis overflow-hidden;
+   background: #F5F5F5;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   padding: 18px 9px 9px;
+   width: 115px;
+
+   &:first-child {
+      @apply ml-0 pl-0;
+   }
+
+   &:last-child {
+      @apply mr-0 pr-0;
+   }
+}
+
+.img {
+   @apply h-28 w-full;
+}
+
+.text {
+   @apply text-xs font-normal mt-3;
+}

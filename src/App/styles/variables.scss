@@ -1,0 +1,21 @@
+:root {
+   --font-family-main: consolas, "Times New Roman", serif;
+   --font-size-m: 16px;
+   --font-size-l: 24px;
+   --font-size-xl: 32px;
+
+   // Размеры
+   --navbar-height: 50px;
+   --sidebar-width: 300px;
+   --sidebar-width-collapsed: 80px;
+
+   // z - Индексы
+   --modal-z-index: 10;
+
+   // Цвета
+   --bg-color: #F4FFF7;
+   --section-color: #fff;
+   --primary-color: #F6F42E;
+   --font-color: #000;
+   --font-system-color: #595959;
+}

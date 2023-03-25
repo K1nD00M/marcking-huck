@@ -2,9 +2,15 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from 'App/App'
 import 'App/index.scss'
+import { StoreProvider } from 'App/providers/StoreProvider'
+import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <App />
+      <BrowserRouter>
+         <StoreProvider>
+               <App />
+         </StoreProvider>
+      </BrowserRouter>
   </React.StrictMode>,
-)
+)  

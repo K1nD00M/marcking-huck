@@ -1,0 +1,13 @@
+.Accordion {
+   @apply rounded-2xl px-4 py-6 bg-white;
+}
+.title {
+   @apply font-semibold text-lg;
+}
+
+.content {
+   @apply overflow-hidden duration-500;
+}
+.open {
+   @apply mt-2;
+}
