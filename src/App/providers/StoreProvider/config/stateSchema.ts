@@ -9,11 +9,13 @@ import { UserSchema } from "entities/User/model/types/user";
 import { CombinedState } from "redux";
 import { AxiosInstance } from "axios";
 import { AuthSchema } from "features/AuthUser/model/types/form";
+import { ProductSchema } from "entities/Product";
 
 export interface StateSchema {
    user: UserSchema;
    
    auth?: AuthSchema
+   product: ProductSchema
 }
 
 export type StateSchemaKey = keyof StateSchema;

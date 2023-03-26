@@ -4,6 +4,7 @@ import { NavigateOptions, To } from 'react-router';
 import { CombinedState, Reducer } from 'redux';
 import { StateSchema } from './stateSchema';
 import { createReducerManager } from './reducersManager';
+import { productReducer } from 'entities/Product/model/slices/productSlice';
 
 export function createReduxStore(
    initialState?: StateSchema,
@@ -12,6 +13,7 @@ export function createReduxStore(
    const rootReducers: ReducersMapObject<StateSchema> = {
       // Редюсеры
       user: userReducer,
+      product: productReducer
    };
 
    const reducerManager = createReducerManager(rootReducers);

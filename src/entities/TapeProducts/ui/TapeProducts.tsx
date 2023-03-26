@@ -10,9 +10,9 @@ interface Props {
 }
 
 const prod: itemTapeProduct[] = [
-   {id: '1', img: '', title: 'Скорикдлябfasdfasdfadsfasdfasdfыстрого приготовления', price: '94', remains: '291'},
-   {id: '2', img: '', title: 'Скорик для быстрого приготовления',  price: '93', remains: "491"},
-   {id: '3', img: '', title: 'Скорик для быстрого приготовления',  price: '91', remains: '29'},
+   {id: '1', img: 'https://my-clothing-shop.ru/pictures/1022697081.jpg', title: 'Скорикдлябfasdfasdfadsfasdfasdfыстрого приготовления', price: '94', remains: '291'},
+   {id: '2', img: 'https://my-clothing-shop.ru/pictures/1022697081.jpg', title: 'Скорик для быстрого приготовления',  price: '93', remains: "491"},
+   {id: '3', img: 'https://my-clothing-shop.ru/pictures/1022697081.jpg', title: 'Скорик для быстрого приготовления',  price: '91', remains: '29'},
 ]
 
 export const TapeProducts = ({ className, title }: Props) => {

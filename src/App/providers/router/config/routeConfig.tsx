@@ -1,5 +1,7 @@
 import { AuthPage } from "pages/AuthPage";
+import { DistrPage } from "pages/DistrPage";
 import { MainPage } from "pages/MainPage";
+import { ProPage } from "pages/ProPage";
 import { ProductPage } from "pages/ProductPage";
 import { ResPage } from "pages/ResPage";
 import { RouteProps } from "react-router-dom";
@@ -13,8 +15,8 @@ export enum AppRoutes {
    AUTH = "auth",
    PRODUCT = "product",
    RES = 'res',
-   //DISTR = 'distr',
-   //CREATOR = 'creator'
+   DISTR = 'distr',
+   CREATOR = 'creator'
 }
 
 export const RoutePath: Record<AppRoutes, string> = {
@@ -22,6 +24,8 @@ export const RoutePath: Record<AppRoutes, string> = {
    [AppRoutes.AUTH]: "/auth",
    [AppRoutes.PRODUCT]: "/product",
    [AppRoutes.RES]: "/res",
+   [AppRoutes.DISTR]: "/distr",
+   [AppRoutes.CREATOR]: '/creator'
 };
 
 export const routeConfig: Record<AppRoutes, RouteProps> = {
@@ -40,5 +44,13 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
    [AppRoutes.RES]: {
       path: RoutePath.res,
       element: <ResPage />
+   },
+   [AppRoutes.DISTR]: {
+      path: RoutePath.distr,
+      element: <DistrPage />
+   },
+   [AppRoutes.CREATOR]: {
+      path: RoutePath.creator,
+      element: <ProPage />
    }
 };

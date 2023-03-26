@@ -1,14 +1,15 @@
 import { Product } from './../types/Product';
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { ThunkConfig } from 'App/providers/StoreProvider/config/stateSchema';
+import axios from 'axios';
 
-const getProduct = createAsyncThunk<Product, string, ThunkConfig<string>> (
+const getProduct = createAsyncThunk (
    'product/get',
    async (data, thunkApi) => {
       const { extra, dispatch, rejectWithValue } = thunkApi;
 
         try {
-            const response = await extra.api.get<Product>('/product');
+            const response = await axios<Product>('localhost:8000/product')
 
             if (!response.data) {
                throw new Error();
